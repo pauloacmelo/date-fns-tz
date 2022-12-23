@@ -62,8 +62,8 @@ function getDateTimeFormat(timeZone) {
       second: '2-digit',
     }).format(new Date('2014-06-25T04:00:00.123Z'))
     var hourCycleSupported =
-      testDateFormatted === '06/25/2014, 00:00:00' ||
-      testDateFormatted === '‎06‎/‎25‎/‎2014‎ ‎00‎:‎00‎:‎00'
+      testDateFormatted === '6/25/2014, 00:00:00' ||
+      testDateFormatted === '‎6‎/‎25‎/‎2014‎ ‎00‎:‎00‎:‎00'
 
     dtfCache[timeZone] = hourCycleSupported
       ? new Intl.DateTimeFormat('en-US', {
